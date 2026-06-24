@@ -1,0 +1,749 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Machines</title>
+    <link rel="icon" href="img/logo/DM LOGO PDF_page-0001.jpg" />
+
+    <link rel="stylesheet" href="style.css?v=2" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <style>
+      :root {
+        --text-main: #162534;
+        --text-muted: #566779;
+        --accent: #1e5f91;
+        --accent-soft: #2b6cb0;
+        --surface: #ffffff;
+        --surface-soft: #f8fbfe;
+        --border: #e4edf5;
+      }
+
+      body {
+        font-family: "Inter", "Poppins", sans-serif;
+        color: var(--text-main);
+        background: #ffffff;
+      }
+
+      .service-hero {
+        padding: 118px 24px 64px;
+        background:
+          radial-gradient(circle at 12% 18%, rgba(43, 108, 176, 0.14), transparent 38%),
+          radial-gradient(circle at 86% 14%, rgba(94, 170, 245, 0.16), transparent 42%),
+          #f6fafe;
+      }
+
+      .service-hero-content {
+        max-width: 1120px;
+        margin: 0 auto;
+        padding: 38px 34px;
+        border-radius: 26px;
+        border: 1px solid rgba(20, 52, 74, 0.1);
+        background: rgba(255, 255, 255, 0.92);
+        box-shadow: 0 18px 46px rgba(16, 34, 52, 0.08);
+      }
+
+      .service-hero-content h2 {
+        margin: 0;
+        font-size: clamp(1.8rem, 3vw, 2.8rem);
+        font-weight: 500;
+        line-height: 1.22;
+      }
+
+      .service-hero-content h2 span {
+        color: var(--accent);
+        font-weight: 700;
+      }
+
+      .bg-text {
+        margin: 10px 0 0;
+        font-size: clamp(2.3rem, 5vw, 4.4rem);
+        line-height: 1.05;
+        letter-spacing: -0.02em;
+        color: #0f2534;
+      }
+
+      .machine-intro {
+        margin-top: 14px;
+        max-width: 760px;
+        color: var(--text-muted);
+        font-size: 0.98rem;
+        line-height: 1.75;
+      }
+
+      .machines-section {
+        max-width: 1120px;
+        margin: 0 auto;
+        padding: 56px 20px 72px;
+      }
+
+      .machines-head {
+        text-align: center;
+        margin-bottom: 1.8rem;
+      }
+
+      .machines-tag {
+        display: inline-block;
+        padding: 6px 12px;
+        border-radius: 999px;
+        background: #eef5fc;
+        color: var(--accent-soft);
+        font-size: 0.78rem;
+        font-weight: 600;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .machines-head h2 {
+        margin: 0.85rem 0 0;
+        font-size: clamp(1.7rem, 2.8vw, 2.5rem);
+        line-height: 1.2;
+      }
+
+      .machines-head p {
+        max-width: 760px;
+        margin: 0.75rem auto 0;
+        color: var(--text-muted);
+        line-height: 1.75;
+      }
+
+      .machine-zigzag {
+        display: grid;
+        gap: 14px;
+      }
+
+      .machine-row {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-areas: "body media";
+        gap: 14px;
+        align-items: stretch;
+      }
+
+      .machine-row:nth-child(even) {
+        grid-template-areas: "media body";
+      }
+
+      .machine-media,
+      .machine-body {
+        border: 1px solid var(--border);
+        border-radius: 16px;
+        background: var(--surface);
+        height: 100%;
+      }
+
+      .machine-body {
+        grid-area: body;
+        padding: 18px 18px 16px;
+        box-shadow: 0 8px 20px rgba(15, 32, 45, 0.05);
+        display: flex;
+        flex-direction: column;
+      }
+
+      .machine-media {
+        grid-area: media;
+        margin: 0;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 8px 20px rgba(15, 32, 45, 0.05);
+        height: 260px;
+      }
+
+      .machine-media img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        background: #f7fafc;
+        padding: 14px;
+      }
+
+      .machine-badge {
+        display: inline-block;
+        padding: 5px 10px;
+        border-radius: 999px;
+        background: #eef5fc;
+        color: var(--accent-soft);
+        font-size: 0.72rem;
+        font-weight: 600;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        margin-bottom: 0.7rem;
+      }
+
+      .machine-body h3 {
+        margin: 0 0 0.6rem;
+        font-size: 1.08rem;
+        font-weight: 600;
+        line-height: 1.35;
+        color: var(--text-main);
+      }
+
+      .machine-body p {
+        margin: 0 0 0.7rem;
+        color: var(--text-muted);
+        line-height: 1.7;
+        font-size: 0.9rem;
+      }
+
+      .machine-body ul {
+        margin: auto 0 0;
+        padding-left: 18px;
+      }
+
+      .machine-body li {
+        margin-bottom: 5px;
+        color: var(--text-muted);
+        font-size: 0.88rem;
+        line-height: 1.6;
+      }
+
+      .machine-body:hover,
+      .machine-media:hover {
+        transform: none;
+        border-color: var(--border);
+        box-shadow: 0 8px 20px rgba(15, 32, 45, 0.05);
+      }
+
+      .reveal {
+        opacity: 1;
+        transform: none;
+      }
+
+      .reveal.is-visible {
+        opacity: 1;
+        transform: none;
+      }
+
+      @media (max-width: 768px) {
+        .machine-row,
+        .machine-row:nth-child(even) {
+          grid-template-columns: 1fr;
+          grid-template-areas:
+            "media"
+            "body";
+        }
+
+        .service-hero {
+          padding: 96px 14px 48px;
+        }
+
+        .service-hero-content {
+          padding: 24px 18px;
+          border-radius: 18px;
+        }
+
+        .machines-section {
+          padding: 42px 14px 58px;
+        }
+
+        .machine-media img {
+          height: 100%;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header class="navbar">
+      <a href="index.html" class="logo">
+        <img
+          src="img/logo/logo-removebg-preview.png"
+          alt="Sri Radhai Industries Logo"
+        />
+        <span class="logo-text">Sri Radhai Industries</span>
+      </a>
+      <button class="menu-toggle" aria-label="Toggle menu">
+        <i class="fas fa-bars"></i>
+      </button>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="precision.html">Precision</a>
+        <a href="contact.html">Contact</a>
+        <a
+          href="https://wa.me/919845380170?text=Hi%20Sri%20Radhai%20Industries,%20I%20would%20like%20to%20enquire%20about%20your%20industrial%20components%20and%20sheet%20metal%20services."
+          target="_blank"
+          rel="noopener"
+          class="btn-yellow"
+          >Enquiry</a
+        >
+      </nav>
+    </header>
+
+    <section class="service-hero reveal" id="machines">
+      <div class="service-hero-content">
+        <h2>Our <span>Machine Setup</span></h2>
+        <h1 class="bg-text">Machines</h1>
+        <p class="machine-intro">
+          Precision-focused machine infrastructure supporting turning, milling,
+          drilling, grinding, welding, and production operations for consistent
+          industrial output.
+        </p>
+      </div>
+    </section>
+
+    <section class="machines-section reveal">
+      <div class="machines-head">
+        <span class="machines-tag">Infrastructure</span>
+        <h2>Explore Our Machines</h2>
+        <p>
+          A balanced lineup of production and support machines enabling reliable
+          machining workflow, repeatable quality, and on-time execution.
+        </p>
+      </div>
+
+      <div class="machine-zigzag">
+        <article class="machine-row">
+          <div class="machine-body">
+            <span class="machine-badge">Machine 01</span>
+            <h3>220-volt-electric-automatic-vmc-machine-036</h3>
+            <p>Reliable VMC platform for controlled machining and repeatable output.</p>
+            <ul>
+              <li>Supports precision milling operations.</li>
+              <li>Stable setup for consistent cycle performance.</li>
+              <li>Suitable for prototype and batch components.</li>
+            </ul>
+          </div>
+          <figure class="machine-media">
+            <img src="img/machines/220-volt-electric-automatic-vmc-machine-036.jpg" alt="VMC Machine" />
+          </figure>
+        </article>
+
+        <article class="machine-row">
+          <div class="machine-body">
+            <span class="machine-badge">Machine 02</span>
+            <h3>cnc turning mac power pro-100-series</h3>
+            <p>Turning machine setup designed for practical, high-accuracy metal parts.</p>
+            <ul>
+              <li>Effective for round component turning.</li>
+              <li>Supports dimensional consistency across runs.</li>
+              <li>Flexible for varied customer part programs.</li>
+            </ul>
+          </div>
+          <figure class="machine-media">
+            <img src="img/machines/pro-100-series.png" alt="CNC Turning Machine" />
+          </figure>
+        </article>
+
+        <article class="machine-row">
+          <div class="machine-body">
+            <span class="machine-badge">Machine 03</span>
+            <h3>centerless-Grinding-Machine</h3>
+            <p>Grinding support for improved finish and dimensional control.</p>
+            <ul>
+              <li>Used for controlled surface finishing.</li>
+              <li>Helps maintain tolerance requirements.</li>
+              <li>Improves component fit and final quality.</li>
+            </ul>
+          </div>
+          <figure class="machine-media">
+            <img src="img/machines/centerless-Grinding-Machine.jpg" alt="Centerless Grinding Machine" />
+          </figure>
+        </article>
+
+        <article class="machine-row">
+          <div class="machine-body">
+            <span class="machine-badge">Machine 04</span>
+            <h3>Toolcraft EX Series BR-5535</h3>
+            <p>Automatic lathe capability for dependable turning productivity.</p>
+            <ul>
+              <li>Stable spindle operation for repetitive work.</li>
+              <li>Supports medium-volume machining requirements.</li>
+              <li>Suitable for precision cylindrical parts.</li>
+            </ul>
+          </div>
+          <figure class="machine-media">
+            <img src="img/machines/Single-Spindle-Automatic-Lathe-Machine.jpg" alt="Automatic Lathe Machine" />
+          </figure>
+        </article>
+
+        <article class="machine-row">
+          <div class="machine-body">
+            <span class="machine-badge">Machine 05</span>
+            <h3>Sumeru MVMC-6040</h3>
+            <p>Versatile machine support for tapping and thread-oriented operations.</p>
+            <ul>
+              <li>Useful for threaded component preparation.</li>
+              <li>Supports repeat production with controlled quality.</li>
+              <li>Works across varied industrial fastener needs.</li>
+            </ul>
+          </div>
+          <figure class="machine-media">
+            <img src="img/machines/tapping-machine-et-1530353254-4042672.jpeg" alt="Tapping Machine" />
+          </figure>
+        </article>
+
+        <article class="machine-row">
+          <div class="machine-body">
+            <span class="machine-badge">Machine 06</span>
+            <h3>Nut Former Machine</h3>
+            <p>Forming setup for shaped nut and fastening component requirements.</p>
+            <ul>
+              <li>Supports consistent forming geometry.</li>
+              <li>Useful in high-repetition manufacturing flow.</li>
+              <li>Helps maintain production turnaround timelines.</li>
+            </ul>
+          </div>
+          <figure class="machine-media">
+            <img src="img/machines/14b6s-nut-former-machine-806.jpg" alt="Nut Former Machine" />
+          </figure>
+        </article>
+
+        <article class="machine-row">
+          <div class="machine-body">
+            <span class="machine-badge">Machine 07</span>
+            <h3>CNC Machine</h3>
+            <p>General CNC capability for accurate and repeatable machining tasks.</p>
+            <ul>
+              <li>Supports drawing-based part production.</li>
+              <li>Maintains reliable dimensional repeatability.</li>
+              <li>Suitable for mixed production requirements.</li>
+            </ul>
+          </div>
+          <figure class="machine-media">
+            <img src="img/machines/71l8-yq8uOL._AC_UF1000,1000_QL80_.jpg" alt="CNC Machine" />
+          </figure>
+        </article>
+
+        <article class="machine-row">
+          <div class="machine-body">
+            <span class="machine-badge">Machine 08</span>
+            <h3>A60 Single Spindle Automatic Lathe</h3>
+            <p>Automatic lathe support for precision round-part machining programs.</p>
+            <ul>
+              <li>Delivers stable turning cycles.</li>
+              <li>Useful for production-oriented components.</li>
+              <li>Supports controlled process repeatability.</li>
+            </ul>
+          </div>
+          <figure class="machine-media">
+            <img src="img/machines/A60-Single-Spindle-Automatic-Lathe-Machine..jpg" alt="A60 Single Spindle Automatic Lathe" />
+          </figure>
+        </article>
+
+        <article class="machine-row">
+          <div class="machine-body">
+            <span class="machine-badge">Machine 09</span>
+            <h3>Bandsaw Machine</h3>
+            <p>Cutting support for preparing raw stock to machining-ready size.</p>
+            <ul>
+              <li>Improves pre-machining material preparation.</li>
+              <li>Supports accurate length control.</li>
+              <li>Helps reduce setup time in downstream operations.</li>
+            </ul>
+          </div>
+          <figure class="machine-media">
+            <img src="img/machines/bandsaw-machine-500x500.webp" alt="Bandsaw Machine" />
+          </figure>
+        </article>
+
+        <article class="machine-row">
+          <div class="machine-body">
+            <span class="machine-badge">Machine 10</span>
+            <h3>Boley Lathe Machine</h3>
+            <p>Lathe setup for turning, facing, and basic precision machining work.</p>
+            <ul>
+              <li>Suitable for versatile metal turning tasks.</li>
+              <li>Supports repeatability in regular production.</li>
+              <li>Reliable for workshop-level precision output.</li>
+            </ul>
+          </div>
+          <figure class="machine-media">
+            <img src="img/machines/boley-lathe-260-x-600-mm-6090_0_l.jpg" alt="Boley Lathe Machine" />
+          </figure>
+        </article>
+
+        <article class="machine-row">
+          <div class="machine-body">
+            <span class="machine-badge">Machine 11</span>
+            <h3>Power Press Machine</h3>
+            <p>Press operation support for forming and sheet metal related work.</p>
+            <ul>
+              <li>Supports repetitive forming operations.</li>
+              <li>Useful in fabrication and pre-assembly stages.</li>
+              <li>Designed for stable press cycle execution.</li>
+            </ul>
+          </div>
+          <figure class="machine-media">
+            <img src="img/machines/fmt-30-ton-c-type-power-press-machine.jpg" alt="Power Press Machine" />
+          </figure>
+        </article>
+
+        <article class="machine-row">
+          <div class="machine-body">
+            <span class="machine-badge">Machine 12</span>
+            <h3>Industrial Machine</h3>
+            <p>General industrial setup supporting broader manufacturing workflow.</p>
+            <ul>
+              <li>Complements machining and fabrication activities.</li>
+              <li>Supports production continuity across jobs.</li>
+              <li>Useful for mixed-process operations.</li>
+            </ul>
+          </div>
+          <figure class="machine-media">
+            <img src="img/machines/images.jpg" alt="Industrial Machine" />
+          </figure>
+        </article>
+
+        <article class="machine-row">
+          <div class="machine-body">
+            <span class="machine-badge">Machine 13</span>
+            <h3>Industrial Machine Unit</h3>
+            <p>Auxiliary industrial machine support for process reinforcement.</p>
+            <ul>
+              <li>Enhances production floor flexibility.</li>
+              <li>Supports varied component handling tasks.</li>
+              <li>Helps maintain practical workflow balance.</li>
+            </ul>
+          </div>
+          <figure class="machine-media">
+            <img src="img/machines/images (1).jpg" alt="Industrial Machine Unit" />
+          </figure>
+        </article>
+
+        <article class="machine-row">
+          <div class="machine-body">
+            <span class="machine-badge">Machine 14</span>
+            <h3>Medium Duty Lathe Machine</h3>
+            <p>Medium-duty turning support for diverse metal machining jobs.</p>
+            <ul>
+              <li>Suitable for routine precision turning.</li>
+              <li>Handles moderate production workloads.</li>
+              <li>Supports stable machining performance.</li>
+            </ul>
+          </div>
+          <figure class="machine-media">
+            <img src="img/machines/Medium-Duty-Lathe-Machine.jpg" alt="Medium Duty Lathe Machine" />
+          </figure>
+        </article>
+
+        <article class="machine-row">
+          <div class="machine-body">
+            <span class="machine-badge">Machine 15</span>
+            <h3>MIG Welding Machine</h3>
+            <p>Welding capability for assembly and fabrication-level operations.</p>
+            <ul>
+              <li>Supports reliable welded joint preparation.</li>
+              <li>Useful for structural and support assemblies.</li>
+              <li>Complements machining in complete part delivery.</li>
+            </ul>
+          </div>
+          <figure class="machine-media">
+            <img src="img/machines/mig_250_3p_1_grande.webp" alt="MIG Welding Machine" />
+          </figure>
+        </article>
+
+        <article class="machine-row">
+          <div class="machine-body">
+            <span class="machine-badge">Machine 16</span>
+            <h3>Nut Tapping Double Spindle Machine</h3>
+            <p>Thread tapping support for nut components in repetitive production.</p>
+            <ul>
+              <li>Double spindle setup for better throughput.</li>
+              <li>Supports uniform thread quality.</li>
+              <li>Useful for fastener-focused manufacturing lines.</li>
+            </ul>
+          </div>
+          <figure class="machine-media">
+            <img src="img/machines/nut-tapping-double-spindle-machines-250x250.webp" alt="Nut Tapping Double Spindle Machine" />
+          </figure>
+        </article>
+
+        <article class="machine-row">
+          <div class="machine-body">
+            <span class="machine-badge">Machine 17</span>
+            <h3>Pillar Drill Machine</h3>
+            <p>Drilling support for accurate hole-making and pre-assembly work.</p>
+            <ul>
+              <li>Reliable for vertical drilling operations.</li>
+              <li>Supports precision hole placement tasks.</li>
+              <li>Useful across multiple part categories.</li>
+            </ul>
+          </div>
+          <figure class="machine-media">
+            <img src="img/machines/pillar-drill-machine-500x500.webp" alt="Pillar Drill Machine" />
+          </figure>
+        </article>
+
+        <article class="machine-row">
+          <div class="machine-body">
+            <span class="machine-badge">Machine 18</span>
+            <h3>Thread Rolling Machine 15 Ton</h3>
+            <p>Thread rolling capability for consistent thread profile formation.</p>
+            <ul>
+              <li>Supports strong and uniform thread output.</li>
+              <li>Suitable for fastener and shaft-like parts.</li>
+              <li>Designed for production-oriented thread work.</li>
+            </ul>
+          </div>
+          <figure class="machine-media">
+            <img src="img/machines/Thread-Rolling-Machine-15-Ton.jpg" alt="Thread Rolling Machine 15 Ton" />
+          </figure>
+        </article>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-brand">
+          <img
+            src="img/logo/logo-removebg-preview.png"
+            alt="Sri Radhai Industries Logo"
+            class="logo"
+          />
+          <p>
+            Sri Radhai Industries - Manufacturers of all kinds of precision
+            industrial components and sheet metal components.
+          </p>
+        </div>
+
+        <div class="footer-links">
+          <h4>Quick Menu</h4>
+          <ul>
+            <li><a href="services.html">VMC Machining</a></li>
+            <li><a href="services.html">CNC Job Work</a></li>
+            <li><a href="machines.html">Machines</a></li>
+            <li><a href="index.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="contact.html">Quality Policy</a></li>
+            <li><a href="contact.html">ISO 9001:2015</a></li>
+            <li><a href="contact.html">Certifications</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-social">
+          <h4>Follow Us</h4>
+          <div class="social-icons">
+            <a
+              href="https://wa.me/919845380170?text=Hi%20Sri%20Radhai%20Industries,%20I%20am%20interested%20in%20your%20industrial%20components%20and%20sheet%20metal%20services."
+              title="Chat on WhatsApp"
+              target="_blank"
+              rel="noopener"
+            >
+              <i class="fab fa-whatsapp"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-contact">
+          <p>
+            <a href="#">
+              <i class="fas fa-user"></i> Contact: S. Ganesh Saravana
+            </a>
+          </p>
+
+          <p>
+            <a href="#">
+              <i class="fas fa-map-marker-alt"></i>
+              Unit 1: No. 634/121, 9th Main Road, Prakashnagar, Bangalore -
+              560021
+            </a>
+          </p>
+
+          <p>
+            <a href="#">
+              <i class="fas fa-map-marker-alt"></i>
+              Unit 2: No. M-14, 8th Cross, Lakshminarayanapuram, Bangalore -
+              560021
+            </a>
+          </p>
+          <p>
+            <a href="tel:+919845380170">
+              <i class="fas fa-phone-alt"></i> Mob: +91 98453 80170
+            </a>
+          </p>
+
+          <p>
+            <a href="tel:08023323305">
+              <i class="fas fa-phone-alt"></i> 080-23323305
+            </a>
+          </p>
+
+          <p>
+            <a href="#"> <i class="fas fa-fax"></i> Fax: 091-080-23325218 </a>
+          </p>
+
+          <p>
+            <a
+              href="https://www.sriradhaiindustries.com"
+              target="_blank"
+              rel="noopener"
+            >
+              <i class="fas fa-globe"></i> www.sriradhaiindustries.com
+            </a>
+          </p>
+
+          <p>
+            <a
+              href="mailto:saravanag@hotmail.com?subject=Enquiry%20-%20Sri%20Radhai%20Industries&body=Hello%20Sri%20Radhai%20Industries,%0A%0AI%20would%20like%20to%20enquire%20about%20your%20precision%20industrial%20components%20and%20sheet%20metal%20services.%0A%0ARegards,%0A[Your%20Name]"
+            >
+              <i class="fas fa-envelope"></i> saravanag@hotmail.com
+            </a>
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© Copyright 2025. Sri Radhai Industries. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const menuToggle = document.querySelector(".menu-toggle");
+        const navLinks = document.querySelector(".nav-links");
+
+        if (menuToggle && navLinks) {
+          menuToggle.addEventListener("click", function (event) {
+            event.preventDefault();
+            event.stopPropagation();
+            navLinks.classList.toggle("active");
+          });
+
+          document.addEventListener("click", function (event) {
+            if (
+              !menuToggle.contains(event.target) &&
+              !navLinks.contains(event.target)
+            ) {
+              navLinks.classList.remove("active");
+            }
+          });
+        }
+
+        const revealNodes = document.querySelectorAll(".reveal");
+        const observer = new IntersectionObserver(
+          function (entries, revealObserver) {
+            entries.forEach(function (entry) {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("is-visible");
+                revealObserver.unobserve(entry.target);
+              }
+            });
+          },
+          { threshold: 0.15, rootMargin: "0px 0px -40px 0px" },
+        );
+
+        revealNodes.forEach(function (node) {
+          observer.observe(node);
+        });
+      });
+    </script>
+  </body>
+</html>
