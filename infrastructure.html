@@ -57,6 +57,7 @@
             <div class="dropdown-menu">
               <a href="infrastructure.html#infrastructure">Infrastructure</a>
               <a href="infrastructure.html#machinery">Machinery</a>
+              <a href="infrastructure.html#instruments">Quality Instruments</a>
             </div>
           </div>
           <a href="services.html" class="nav-link">Services</a>
@@ -80,6 +81,9 @@
         >
         <a href="infrastructure.html#machinery" class="mobile-link"
           >Machinery</a
+        >
+        <a href="infrastructure.html#instruments" class="mobile-link"
+          >Quality Instruments</a
         >
         <a href="services.html" class="mobile-link">Services</a>
         <a href="contact.html" class="mobile-link">Contact</a>
@@ -277,53 +281,7 @@
             </div>
 
             <!-- Location Unit 2 -->
-            <div
-              class="location-card anim-trigger"
-              data-anim="fade-left"
-              data-delay="200"
-            >
-              <div class="location-header">
-                <div class="location-badge">UNIT 02</div>
-                <h3>Hegganahalli Facility</h3>
-                <span class="location-sub"
-                  >Component Assembly & Raw Material Cell</span
-                >
-              </div>
-              <div class="location-body">
-                <ul class="location-specs">
-                  <li>
-                    <strong>Address:</strong> Hegganahalli, Bengaluru - 560091
-                  </li>
-                  <li>
-                    <strong>Area:</strong> ~4,000 Sq. Ft. specialized workspace
-                  </li>
-                  <li>
-                    <strong>Core Operations:</strong> Raw material testing &
-                    staging, pre-machining bandsaw prep, special processes
-                    management, sub-assembly, and final dispatch inspection.
-                  </li>
-                  <li>
-                    <strong>Focus:</strong> Turnkey material sourcing, surface
-                    treatment coordination, and final product integration.
-                  </li>
-                </ul>
-
-                <!-- Framed image placeholder -->
-                <div class="location-viewport">
-                  <div class="viewport-corners">
-                    <span class="corner top-left"></span>
-                    <span class="corner top-right"></span>
-                    <span class="corner bottom-left"></span>
-                    <span class="corner bottom-right"></span>
-                  </div>
-                  <img
-                    src="images/about_facility.png"
-                    alt="Hegganahalli Assembly Facility"
-                    class="viewport-img"
-                  />
-                </div>
-              </div>
-            </div>
+           
           </div>
         </div>
       </section>
@@ -355,7 +313,7 @@
           </div>
 
           <div class="machinery-grid">
-            <!-- Machine 1: VL 610 STM -->
+            <!-- Machine 1: STM VL 610 VMC -->
             <div
               class="machine-card anim-trigger"
               data-anim="fade-up"
@@ -381,27 +339,24 @@
                   </svg>
                 </div>
                 <span class="machine-category font-mono"
-                  >VMC / Vertical Machining</span
+                  >VMC / Vertical Machining (01 No.)</span
                 >
               </div>
               <div class="machine-card-content">
-                <h3>VL 610 STM</h3>
+                <h3>STM VL 610 VMC</h3>
                 <p class="machine-desc">
                   High-performance vertical machining center (VMC) engineered
                   for high-precision milling, complex contouring, and rigid
                   aerospace component manufacturing.
                 </p>
 
-                <!-- Black Framed Image Viewport -->
                 <div
                   class="service-img-viewport"
                   style="
-                    background-color: #000000;
-                    min-height: 220px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
                     position: relative;
+                    overflow: hidden;
+                    border-radius: 8px;
+                    border: 1px solid rgba(255, 255, 255, 0.1);
                   "
                 >
                   <div class="viewport-corners">
@@ -410,51 +365,174 @@
                     <span class="corner bottom-left"></span>
                     <span class="corner bottom-right"></span>
                   </div>
-                  <div
+                  <img
+                    src="images/machines/stm_vl610_vmc.jpg"
+                    alt="STM VL 610 VMC Machine"
                     style="
-                      color: rgba(255, 255, 255, 0.3);
-                      text-align: center;
-                      padding: 20px;
+                      width: 100%;
+                      height: 220px;
+                      object-fit: cover;
+                      display: block;
                     "
-                    class="font-mono"
-                  >
-                    <svg
-                      viewBox="0 0 24 24"
-                      width="36"
-                      height="36"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="1.5"
-                      style="margin: 0 auto 8px; opacity: 0.4; display: block"
-                    >
-                      <rect x="3" y="3" width="18" height="18" rx="2" />
-                      <circle cx="8.5" cy="8.5" r="1.5" />
-                      <path d="M21 15l-5-5L5 21" />
-                    </svg>
-                    <span
-                      style="
-                        font-size: 0.75rem;
-                        letter-spacing: 1px;
-                        text-transform: uppercase;
-                      "
-                      >[ VL 610 STM Image ]</span
-                    >
-                  </div>
+                  />
                 </div>
 
                 <ul class="machine-specs font-mono">
-                  <li>Multi-axis vertical machining center</li>
+                  <li>610mm X-Axis travel envelope</li>
                   <li>High spindle precision & speed control</li>
                   <li>Tight-tolerance aerospace component milling</li>
                 </ul>
               </div>
             </div>
 
-            <!-- Machine 2: LX 20T L5 LMW -->
+            <!-- Machine 2: STM VL 850 VMC -->
             <div
               class="machine-card anim-trigger"
               data-anim="fade-up"
               data-delay="200"
+            >
+              <div class="machine-card-header">
+                <div class="machine-icon-wrap">
+                  <svg class="machine-icon anim-spin-slow" viewBox="0 0 32 32">
+                    <circle
+                      cx="16"
+                      cy="16"
+                      r="5"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      fill="none"
+                    />
+                    <path
+                      d="M16 4v4M16 24v4M4 16h4M24 16h4M7.5 7.5l2.8 2.8M21.7 21.7l2.8 2.8M7.5 24.5l2.8-2.8M21.7 10.3l2.8-2.8"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                </div>
+                <span class="machine-category font-mono"
+                  >VMC / Vertical Machining (02 Nos.)</span
+                >
+              </div>
+              <div class="machine-card-content">
+                <h3>STM VL 850 VMC</h3>
+                <p class="machine-desc">
+                  Heavy-duty Vertical Machining Center offering an extended 850mm
+                  working envelope, optimized for larger structural components,
+                  multi-axis milling, and serial batch manufacturing.
+                </p>
+
+                <div
+                  class="service-img-viewport"
+                  style="
+                    position: relative;
+                    overflow: hidden;
+                    border-radius: 8px;
+                    border: 1px solid rgba(255, 255, 255, 0.1);
+                  "
+                >
+                  <div class="viewport-corners">
+                    <span class="corner top-left"></span>
+                    <span class="corner top-right"></span>
+                    <span class="corner bottom-left"></span>
+                    <span class="corner bottom-right"></span>
+                  </div>
+                  <img
+                    src="images/machines/stm_vl850_vmc.jpg"
+                    alt="STM VL 850 VMC Machine"
+                    style="
+                      width: 100%;
+                      height: 220px;
+                      object-fit: cover;
+                      display: block;
+                    "
+                  />
+                </div>
+
+                <ul class="machine-specs font-mono">
+                  <li>850mm extended working envelope</li>
+                  <li>Dual-unit installation for high volume</li>
+                  <li>Heavy-cut stability for Steel & Titanium</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Machine 3: Cosmos CVM 800 -->
+            <div
+              class="machine-card anim-trigger"
+              data-anim="fade-up"
+              data-delay="300"
+            >
+              <div class="machine-card-header">
+                <div class="machine-icon-wrap">
+                  <svg class="machine-icon anim-pulse" viewBox="0 0 32 32">
+                    <circle
+                      cx="16"
+                      cy="16"
+                      r="6"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      fill="none"
+                    />
+                    <path
+                      d="M4 16h24M16 4v24"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    />
+                  </svg>
+                </div>
+                <span class="machine-category font-mono"
+                  >VMC / Vertical Machining (03 Nos.)</span
+                >
+              </div>
+              <div class="machine-card-content">
+                <h3>Cosmos CVM 800 (Mitsubishi)</h3>
+                <p class="machine-desc">
+                  Advanced Cosmos VMC installation with Mitsubishi CNC control,
+                  delivering high-torque vertical milling, complex slotting, and
+                  multi-surface machining for defense & industrial parts.
+                </p>
+
+                <div
+                  class="service-img-viewport"
+                  style="
+                    position: relative;
+                    overflow: hidden;
+                    border-radius: 8px;
+                    border: 1px solid rgba(255, 255, 255, 0.1);
+                  "
+                >
+                  <div class="viewport-corners">
+                    <span class="corner top-left"></span>
+                    <span class="corner top-right"></span>
+                    <span class="corner bottom-left"></span>
+                    <span class="corner bottom-right"></span>
+                  </div>
+                  <img
+                    src="images/machines/cosmos_cvm800.jpg"
+                    alt="Cosmos CVM 800 VMC Machine"
+                    style="
+                      width: 100%;
+                      height: 220px;
+                      object-fit: cover;
+                      display: block;
+                    "
+                  />
+                </div>
+
+                <ul class="machine-specs font-mono">
+                  <li>Mitsubishi high-speed CNC control system</li>
+                  <li>3-Unit dedicated production fleet</li>
+                  <li>High-torque spindle for tough alloys</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Machine 4: LMW LX 20T L5 CNC Lathe -->
+            <div
+              class="machine-card anim-trigger"
+              data-anim="fade-up"
+              data-delay="100"
             >
               <div class="machine-card-header">
                 <div class="machine-icon-wrap">
@@ -484,27 +562,24 @@
                   </svg>
                 </div>
                 <span class="machine-category font-mono"
-                  >CNC Turning / Lathe</span
+                  >CNC Turning / Lathe (04 Nos.)</span
                 >
               </div>
               <div class="machine-card-content">
-                <h3>LX 20T L5 LMW</h3>
+                <h3>LMW LX 20T L5 CNC Lathe</h3>
                 <p class="machine-desc">
                   Heavy-duty CNC turning center from LMW built for high-accuracy
-                  turned shafts, circular profiles, and consistent multi-run
-                  batch production.
+                  turned shafts, circular profiles, precision threading, and
+                  consistent multi-run batch production.
                 </p>
 
-                <!-- Black Framed Image Viewport -->
                 <div
                   class="service-img-viewport"
                   style="
-                    background-color: #000000;
-                    min-height: 220px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
                     position: relative;
+                    overflow: hidden;
+                    border-radius: 8px;
+                    border: 1px solid rgba(255, 255, 255, 0.1);
                   "
                 >
                   <div class="viewport-corners">
@@ -513,235 +588,27 @@
                     <span class="corner bottom-left"></span>
                     <span class="corner bottom-right"></span>
                   </div>
-                  <div
+                  <img
+                    src="images/machines/lmw_lx20t_l5.jpg"
+                    alt="LMW LX 20T L5 CNC Lathe Machine"
                     style="
-                      color: rgba(255, 255, 255, 0.3);
-                      text-align: center;
-                      padding: 20px;
+                      width: 100%;
+                      height: 220px;
+                      object-fit: cover;
+                      display: block;
                     "
-                    class="font-mono"
-                  >
-                    <svg
-                      viewBox="0 0 24 24"
-                      width="36"
-                      height="36"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="1.5"
-                      style="margin: 0 auto 8px; opacity: 0.4; display: block"
-                    >
-                      <rect x="3" y="3" width="18" height="18" rx="2" />
-                      <circle cx="8.5" cy="8.5" r="1.5" />
-                      <path d="M21 15l-5-5L5 21" />
-                    </svg>
-                    <span
-                      style="
-                        font-size: 0.75rem;
-                        letter-spacing: 1px;
-                        text-transform: uppercase;
-                      "
-                      >[ LX 20T L5 LMW Image ]</span
-                    >
-                  </div>
+                  />
                 </div>
 
                 <ul class="machine-specs font-mono">
-                  <li>LMW L5 precision turning architecture</li>
+                  <li>4-Unit high-capacity CNC turning battery</li>
                   <li>Rigid bed design for vibration-free turning</li>
                   <li>Superior cylindrical surface finish</li>
                 </ul>
               </div>
             </div>
 
-            <!-- Machine 3: CVM 800 Cosmos -->
-            <div
-              class="machine-card anim-trigger"
-              data-anim="fade-up"
-              data-delay="300"
-            >
-              <div class="machine-card-header">
-                <div class="machine-icon-wrap">
-                  <svg class="machine-icon anim-pulse" viewBox="0 0 32 32">
-                    <circle
-                      cx="16"
-                      cy="16"
-                      r="6"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      fill="none"
-                    />
-                    <path
-                      d="M4 16h24M16 4v24"
-                      stroke="currentColor"
-                      stroke-width="2"
-                    />
-                  </svg>
-                </div>
-                <span class="machine-category font-mono"
-                  >VMC / Vertical Machining</span
-                >
-              </div>
-              <div class="machine-card-content">
-                <h3>CVM 800 Cosmos</h3>
-                <p class="machine-desc">
-                  Advanced Cosmos VMC installation delivering high-torque
-                  vertical milling, complex slotting, and multi-surface
-                  machining for defense & industrial parts.
-                </p>
-
-                <!-- Black Framed Image Viewport -->
-                <div
-                  class="service-img-viewport"
-                  style="
-                    background-color: #000000;
-                    min-height: 220px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    position: relative;
-                  "
-                >
-                  <div class="viewport-corners">
-                    <span class="corner top-left"></span>
-                    <span class="corner top-right"></span>
-                    <span class="corner bottom-left"></span>
-                    <span class="corner bottom-right"></span>
-                  </div>
-                  <div
-                    style="
-                      color: rgba(255, 255, 255, 0.3);
-                      text-align: center;
-                      padding: 20px;
-                    "
-                    class="font-mono"
-                  >
-                    <svg
-                      viewBox="0 0 24 24"
-                      width="36"
-                      height="36"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="1.5"
-                      style="margin: 0 auto 8px; opacity: 0.4; display: block"
-                    >
-                      <rect x="3" y="3" width="18" height="18" rx="2" />
-                      <circle cx="8.5" cy="8.5" r="1.5" />
-                      <path d="M21 15l-5-5L5 21" />
-                    </svg>
-                    <span
-                      style="
-                        font-size: 0.75rem;
-                        letter-spacing: 1px;
-                        text-transform: uppercase;
-                      "
-                      >[ CVM 800 Cosmos Image ]</span
-                    >
-                  </div>
-                </div>
-
-                <ul class="machine-specs font-mono">
-                  <li>800mm X-axis working envelope</li>
-                  <li>High-torque spindle for tough alloys</li>
-                  <li>Rapid automatic tool changer (ATC)</li>
-                </ul>
-              </div>
-            </div>
-
-            <!-- Machine 4: Ultima M 700 -->
-            <div
-              class="machine-card anim-trigger"
-              data-anim="fade-up"
-              data-delay="100"
-            >
-              <div class="machine-card-header">
-                <div class="machine-icon-wrap">
-                  <svg class="machine-icon anim-spin-slow" viewBox="0 0 32 32">
-                    <circle
-                      cx="16"
-                      cy="16"
-                      r="6"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      fill="none"
-                    />
-                    <path
-                      d="M2 16h28M16 2v28"
-                      stroke="currentColor"
-                      stroke-width="2"
-                    />
-                  </svg>
-                </div>
-                <span class="machine-category font-mono"
-                  >Precision Machining</span
-                >
-              </div>
-              <div class="machine-card-content">
-                <h3>Ultima M 700</h3>
-                <p class="machine-desc">
-                  High-precision CNC machining center engineered for complex
-                  component geometries, fine tolerances, and repeatable accuracy
-                  in aerospace alloys.
-                </p>
-
-                <!-- Black Framed Image Viewport -->
-                <div
-                  class="service-img-viewport"
-                  style="
-                    background-color: #000000;
-                    min-height: 220px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    position: relative;
-                  "
-                >
-                  <div class="viewport-corners">
-                    <span class="corner top-left"></span>
-                    <span class="corner top-right"></span>
-                    <span class="corner bottom-left"></span>
-                    <span class="corner bottom-right"></span>
-                  </div>
-                  <div
-                    style="
-                      color: rgba(255, 255, 255, 0.3);
-                      text-align: center;
-                      padding: 20px;
-                    "
-                    class="font-mono"
-                  >
-                    <svg
-                      viewBox="0 0 24 24"
-                      width="36"
-                      height="36"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="1.5"
-                      style="margin: 0 auto 8px; opacity: 0.4; display: block"
-                    >
-                      <rect x="3" y="3" width="18" height="18" rx="2" />
-                      <circle cx="8.5" cy="8.5" r="1.5" />
-                      <path d="M21 15l-5-5L5 21" />
-                    </svg>
-                    <span
-                      style="
-                        font-size: 0.75rem;
-                        letter-spacing: 1px;
-                        text-transform: uppercase;
-                      "
-                      >[ Ultima M 700 Image ]</span
-                    >
-                  </div>
-                </div>
-
-                <ul class="machine-specs font-mono">
-                  <li>Ultra-fine positioning accuracy</li>
-                  <li>Optimized dynamic response & feeds</li>
-                  <li>Versatile for Titanium, Inconel & Aluminum</li>
-                </ul>
-              </div>
-            </div>
-
-            <!-- Machine 5: Gem Trust Tech Air Pressure Pump -->
+            <!-- Machine 5: 10HP Surya VFD Screw Air Compressor -->
             <div
               class="machine-card anim-trigger"
               data-anim="fade-up"
@@ -770,27 +637,24 @@
                   </svg>
                 </div>
                 <span class="machine-category font-mono"
-                  >Pneumatics & Shop Support</span
+                  >Pneumatics & Support (05 Nos.)</span
                 >
               </div>
               <div class="machine-card-content">
-                <h3>Gem Trust Tech Air Pressure Pump</h3>
+                <h3>10HP Surya VFD Screw Air Compressor</h3>
                 <p class="machine-desc">
-                  Industrial-grade air pressure pumping system providing
-                  continuous, regulated pneumatic supply for CNC chucking,
-                  automatic tool changers, and shop air filtration.
+                  Variable Frequency Drive rotary screw air compressor system
+                  delivering continuous, energy-efficient pneumatic supply for
+                  CNC chucking, ATC tool changers, and air filtration.
                 </p>
 
-                <!-- Black Framed Image Viewport -->
                 <div
                   class="service-img-viewport"
                   style="
-                    background-color: #000000;
-                    min-height: 220px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
                     position: relative;
+                    overflow: hidden;
+                    border-radius: 8px;
+                    border: 1px solid rgba(255, 255, 255, 0.1);
                   "
                 >
                   <div class="viewport-corners">
@@ -799,42 +663,273 @@
                     <span class="corner bottom-left"></span>
                     <span class="corner bottom-right"></span>
                   </div>
-                  <div
+                  <img
+                    src="images/machines/surya_vfd_compressor.jpg"
+                    alt="10HP Surya VFD Screw Air Compressor"
                     style="
-                      color: rgba(255, 255, 255, 0.3);
-                      text-align: center;
-                      padding: 20px;
+                      width: 100%;
+                      height: 220px;
+                      object-fit: cover;
+                      display: block;
                     "
-                    class="font-mono"
-                  >
-                    <svg
-                      viewBox="0 0 24 24"
-                      width="36"
-                      height="36"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="1.5"
-                      style="margin: 0 auto 8px; opacity: 0.4; display: block"
-                    >
-                      <rect x="3" y="3" width="18" height="18" rx="2" />
-                      <circle cx="8.5" cy="8.5" r="1.5" />
-                      <path d="M21 15l-5-5L5 21" />
-                    </svg>
-                    <span
-                      style="
-                        font-size: 0.75rem;
-                        letter-spacing: 1px;
-                        text-transform: uppercase;
-                      "
-                      >[ Air Pressure Pump Image ]</span
-                    >
-                  </div>
+                  />
                 </div>
 
                 <ul class="machine-specs font-mono">
-                  <li>Regulated high-pressure pneumatic delivery</li>
-                  <li>Powers automated tool clamping & chucks</li>
-                  <li>Continuous duty cycle with safety monitoring</li>
+                  <li>10HP Variable Frequency Drive (VFD) efficiency</li>
+                  <li>5-Unit shopfloor pneumatic supply network</li>
+                  <li>Continuous duty cycle with moisture separation</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ QUALITY & INSPECTION INSTRUMENTS SECTION ============ -->
+      <section class="section instruments-grid-section" id="instruments">
+        <div class="tech-dot-grid"></div>
+        <div class="container section-relative">
+          <div class="section-header center">
+            <span class="section-tag anim-trigger" data-anim="fade-down"
+              >Metrology Lab</span
+            >
+            <h2
+              class="section-title anim-trigger"
+              data-anim="fade-up"
+              data-delay="100"
+            >
+              Quality & Inspection Instruments
+            </h2>
+            <p
+              class="section-desc anim-trigger"
+              data-anim="fade-up"
+              data-delay="150"
+            >
+              Our temperature-controlled quality control room features high-precision
+              metrology equipment and calibrated measuring instruments to verify
+              aerospace & defense tolerances down to the micron level.
+            </p>
+          </div>
+
+          <div class="machinery-grid">
+            <!-- Featured Instrument: Electronica 2D Ultima M 700 Height Master -->
+            <div
+              class="machine-card anim-trigger"
+              data-anim="fade-up"
+              data-delay="100"
+            >
+              <div class="machine-card-header">
+                <div class="machine-icon-wrap">
+                  <svg class="machine-icon anim-spin-slow" viewBox="0 0 32 32">
+                    <circle
+                      cx="16"
+                      cy="16"
+                      r="6"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      fill="none"
+                    />
+                    <path
+                      d="M2 16h28M16 2v28"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    />
+                  </svg>
+                </div>
+                <span class="machine-category font-mono"
+                  >Metrology Master (01 No.)</span
+                >
+              </div>
+              <div class="machine-card-content">
+                <h3>Electronica 2D Ultima M 700</h3>
+                <p class="machine-desc">
+                  High-precision 2D motorized Height Master featuring 700mm
+                  measuring range, automated 2D feature processing (bore centers,
+                  pitch, flatness, perpendicularity), and sub-micron resolution.
+                </p>
+
+                <div
+                  class="service-img-viewport"
+                  style="
+                    position: relative;
+                    overflow: hidden;
+                    border-radius: 8px;
+                    border: 1px solid rgba(255, 255, 255, 0.1);
+                  "
+                >
+                  <div class="viewport-corners">
+                    <span class="corner top-left"></span>
+                    <span class="corner top-right"></span>
+                    <span class="corner bottom-left"></span>
+                    <span class="corner bottom-right"></span>
+                  </div>
+                  <img
+                    src="images/machines/ultima_m700_height_master.jpg"
+                    alt="Electronica 2D Ultima M 700 Height Master"
+                    style="
+                      width: 100%;
+                      height: 220px;
+                      object-fit: cover;
+                      display: block;
+                    "
+                  />
+                </div>
+
+                <ul class="machine-specs font-mono">
+                  <li>700mm vertical measuring range</li>
+                  <li>Motorized touch-probe with 2D feature math</li>
+                  <li>Sub-micron height & distance accuracy</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Instrument 2: Digital Micrometers -->
+            <div
+              class="machine-card anim-trigger"
+              data-anim="fade-up"
+              data-delay="200"
+            >
+              <div class="machine-card-header">
+                <div class="machine-icon-wrap">
+                  <svg class="machine-icon anim-pulse" viewBox="0 0 32 32">
+                    <circle cx="16" cy="16" r="10" stroke="currentColor" stroke-width="2" fill="none"/>
+                    <path d="M16 6v20M6 16h20" stroke="currentColor" stroke-width="1.5"/>
+                  </svg>
+                </div>
+                <span class="machine-category font-mono"
+                  >Dimensional Inspection</span
+                >
+              </div>
+              <div class="machine-card-content">
+                <h3>Digital Micrometers</h3>
+                <p class="machine-desc">
+                  Precision outside micrometers covering 0–25mm and 25–50mm range with carbide-tipped measuring faces for high-repeatability wall thickness and shaft diameter checks.
+                </p>
+                <ul class="machine-specs font-mono" style="margin-top: auto;">
+                  <li>0–25mm & 25–50mm measuring range</li>
+                  <li>0.001mm digital display resolution</li>
+                  <li>Carbide-tipped anvil & spindle faces</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Instrument 3: Vernier Calipers -->
+            <div
+              class="machine-card anim-trigger"
+              data-anim="fade-up"
+              data-delay="300"
+            >
+              <div class="machine-card-header">
+                <div class="machine-icon-wrap">
+                  <svg class="machine-icon anim-wiggle" viewBox="0 0 32 32">
+                    <rect x="4" y="10" width="24" height="12" rx="2" stroke="currentColor" stroke-width="2" fill="none"/>
+                    <path d="M8 10v6M12 10v4M16 10v6M20 10v4M24 10v6" stroke="currentColor" stroke-width="1.5"/>
+                  </svg>
+                </div>
+                <span class="machine-category font-mono"
+                  >Precision Gauging</span
+                >
+              </div>
+              <div class="machine-card-content">
+                <h3>Vernier & Digital Calipers</h3>
+                <p class="machine-desc">
+                  Mitutoyo precision digital and analog calipers covering 0–200mm and 0–300mm for rapid internal, external, depth, and step measurements on shopfloor and QA lab.
+                </p>
+                <ul class="machine-specs font-mono" style="margin-top: auto;">
+                  <li>0–200mm & 0–300mm measuring scale</li>
+                  <li>Absolute encoder technology</li>
+                  <li>Stainless steel hardened construction</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Instrument 4: Bore Gauges & Dial Indicators -->
+            <div
+              class="machine-card anim-trigger"
+              data-anim="fade-up"
+              data-delay="100"
+            >
+              <div class="machine-card-header">
+                <div class="machine-icon-wrap">
+                  <svg class="machine-icon anim-pulse" viewBox="0 0 32 32">
+                    <circle cx="16" cy="16" r="11" stroke="currentColor" stroke-width="2" fill="none"/>
+                    <path d="M16 16l5-5M16 16v-8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                  </svg>
+                </div>
+                <span class="machine-category font-mono"
+                  >Bore & Runout Metrology</span
+                >
+              </div>
+              <div class="machine-card-content">
+                <h3>Bore Gauges & Dial Indicators</h3>
+                <p class="machine-desc">
+                  High-sensitivity dial test indicators (0.001mm) and internal dial bore gauges for precise concentricity, run-out, circularity, and cylinder bore diameter inspection.
+                </p>
+                <ul class="machine-specs font-mono" style="margin-top: auto;">
+                  <li>Internal bore diameter measurement</li>
+                  <li>High-sensitivity 0.001mm dial indicators</li>
+                  <li>Magnetic bases & alignment stands</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Instrument 5: Thread Plug & Ring Gauges -->
+            <div
+              class="machine-card anim-trigger"
+              data-anim="fade-up"
+              data-delay="200"
+            >
+              <div class="machine-card-header">
+                <div class="machine-icon-wrap">
+                  <svg class="machine-icon anim-spin-slow" viewBox="0 0 32 32">
+                    <circle cx="16" cy="16" r="9" stroke="currentColor" stroke-width="2" fill="none"/>
+                    <circle cx="16" cy="16" r="4" stroke="currentColor" stroke-width="2" fill="none"/>
+                  </svg>
+                </div>
+                <span class="machine-category font-mono"
+                  >Thread Verification</span
+                >
+              </div>
+              <div class="machine-card-content">
+                <h3>26 Calibrated Thread Gauges</h3>
+                <p class="machine-desc">
+                  Comprehensive inventory of 26 calibrated Go/No-Go thread plug and thread ring gauges (SLD-TPG-01 to SLD-TPG-26) covering Metric, UN, and NPT thread profiles.
+                </p>
+                <ul class="machine-specs font-mono" style="margin-top: auto;">
+                  <li>26 Calibrated Gauge Sets (SLD-TPG-01 ~ 26)</li>
+                  <li>Go / No-Go pitch diameter verification</li>
+                  <li>Traceable to NABL calibration standards</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Instrument 6: Slip Gauges & Pin Gauges -->
+            <div
+              class="machine-card anim-trigger"
+              data-anim="fade-up"
+              data-delay="300"
+            >
+              <div class="machine-card-header">
+                <div class="machine-icon-wrap">
+                  <svg class="machine-icon anim-pulse" viewBox="0 0 32 32">
+                    <rect x="6" y="8" width="20" height="16" rx="2" stroke="currentColor" stroke-width="2" fill="none"/>
+                    <path d="M10 8v16M14 8v16M18 8v16M22 8v16" stroke="currentColor" stroke-width="1.5"/>
+                  </svg>
+                </div>
+                <span class="machine-category font-mono"
+                  >Reference Calibration</span
+                >
+              </div>
+              <div class="machine-card-content">
+                <h3>Slip Gauges & Pin Gauge Sets</h3>
+                <p class="machine-desc">
+                  Grade 0 precision gauge block sets and complete pin gauge sets used for calibrating measuring instruments and verifying small hole diameters & slot widths.
+                </p>
+                <ul class="machine-specs font-mono" style="margin-top: auto;">
+                  <li>Grade 0 tungsten carbide slip blocks</li>
+                  <li>Precision pin gauge set (0.5mm to 10mm)</li>
+                  <li>Used for master tool calibration</li>
                 </ul>
               </div>
             </div>
